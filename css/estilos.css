@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #0a0f1e 0%, #0f172a 100%);
+    color: #e2e8f0;
+}
+
+header {
+    background: linear-gradient(90deg, #6b21a5, #3b0764);
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 4px solid #a855f7;
+}
+
+header h1 {
+    font-size: 3rem;
+    text-shadow: 3px 3px 0px #4c1d95;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    color: #c4b5fd;
+}
+
+nav {
+    background-color: #1e1b4b;
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1.5rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    transition: background 0.3s;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #a855f7;
+    color: black;
+}
+
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+section {
+    background-color: #1e293b;
+    border-radius: 20px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+h2 {
+    color: #a855f7;
+    margin-bottom: 1rem;
+    border-left: 5px solid #a855f7;
+    padding-left: 1rem;
+}
+
+.juegos ul {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.juegos li {
+    background-color: #334155;
+    margin: 0.5rem 0;
+    padding: 0.7rem;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+.juegos li:hover {
+    background-color: #a855f7;
+    color: black;
+    cursor: pointer;
+}
+
+.intro img {
+    border-radius: 15px;
+    border: 2px solid #a855f7;
+    margin-top: 1rem;
+}
+
+.video iframe {
+    width: 100%;
+    max-width: 560px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.audio audio {
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.enlaces a {
+    color: #c084fc;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0.5rem 0;
+}
+
+.enlaces a:hover {
+    color: #f0abfc;
+}
+
+footer {
+    background-color: #0f172a;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border-top: 2px solid #a855f7;
+    color: #94a3b8;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ========== ESTILOS NUEVOS ========== */
+
+.noticias {
+    background-color: #1e293b;
+    border-radius: 20px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.noticia-item {
+    background-color: #334155;
+    border-radius: 10px;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    transition: background 0.3s;
+}
+
+.noticia-item:hover {
+    background-color: #475569;
+}
+
+.noticia-item h3 {
+    color: #a855f7;
+    margin-bottom: 0.3rem;
+}
+
+.contacto {
+    background-color: #1e293b;
+    border-radius: 20px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin-top: 1rem;
+}
+
+.contacto label {
+    font-weight: bold;
+    color: #c4b5fd;
+}
+
+.contacto input, 
+.contacto textarea {
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #334155;
+    color: white;
+    font-family: inherit;
+}
+
+.contacto input:focus, 
+.contacto textarea:focus {
+    outline: 2px solid #a855f7;
+}
+
+.contacto button {
+    background-color: #a855f7;
+    color: black;
+    font-weight: bold;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contacto button:hover {
+    background-color: #c084fc;
+}
+
+/* ========== ESTILOS PARA CONSOLAS ========== */
+
+.consolas {
+    background-color: #1e293b;
+    border-radius: 20px;
+    padding: 1.5rem;
+}
+
+.consola-card {
+    background-color: #334155;
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.consola-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(168, 85, 247, 0.3);
+}
+
+.consola-card h3 {
+    color: #a855f7;
+    margin-bottom: 1rem;
+}
+
+.consola-card img {
+    display: block;
+    margin: 1rem 0;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* ========== ESTILOS PARA NOTICIAS COMPLETAS ========== */
+
+.noticia-completa {
+    background-color: #1e293b;
+    border-radius: 20px;
+    padding: 2rem;
+    line-height: 1.6;
+}
+
+.noticia-completa h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.noticia-completa p {
+    margin-bottom: 1rem;
+}
+
+/* ========== ESTILOS PARA LA LISTA DE JUEGOS ========== */
+
+.lista-juegos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.juego-link {
+    background-color: #334155;
+    color: #e2e8f0;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s;
+    font-weight: bold;
+    display: block;
+}
+
+.juego-link:hover {
+    background-color: #a855f7;
+    color: black;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(168, 85, 247, 0.3);
+}
+
+/* ========== ESTILOS PARA RESEÑAS ========== */
+
+.reseña {
+    background-color: #1e293b;
+    border-radius: 20px;
+    padding: 2rem;
+    line-height: 1.6;
+}
+
+.reseña h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.reseña h3 {
+    color: #a855f7;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.reseña p {
+    margin-bottom: 1rem;
+}
+
+.boton-volver {
+    display: inline-block;
+    background-color: #a855f7;
+    color: black;
+    font-weight: bold;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-top: 1.5rem;
+    transition: background 0.3s;
+}
+
+.boton-volver:hover {
+    background-color: #c084fc;
+}
+
+/* ============================================ */
+/* DISEÑO RESPONSIVE PARA CELULARES */
+/* ============================================ */
+
+/* Pantallas de hasta 768px de ancho */
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header {
+        padding: 1rem;
+    }
+
+    /* Menú con scroll horizontal en celular */
+    nav {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        text-align: left;
+        padding: 0.8rem;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 0 0.5rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    main {
+        margin: 1rem;
+        padding: 0.5rem;
+    }
+
+    section, .reseña, .consola-card, .noticia-item {
+        padding: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .lista-juegos {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+
+    .contacto form {
+        width: 100%;
+    }
+
+    .video iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    .boton-volver {
+        display: block;
+        text-align: center;
+    }
+
+    footer {
+        font-size: 0.8rem;
+        padding: 1rem;
+    }
+}
+
+/* Pantallas muy pequeñas (menos de 480px) */
+@media (max-width: 480px) {
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .consola-card img {
+        max-width: 150px;
+    }
+
+    .juego-link, .boton-volver, nav a, .contacto button {
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+
+    section, .consola-card {
+        margin-bottom: 1.5rem;
+    }
+}
